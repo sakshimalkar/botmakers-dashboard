@@ -10,7 +10,7 @@
 ---
 ## 🔗 Live Demo
 
-**View the live application:** [BotMakers Dashboard - The Arena](https://your-live-demo-url.com)
+**View the live application:** [BotMakers Dashboard - The Arena]( https://sakshimalkar.github.io/botmakers-dashboard/)
 
 ---
 
