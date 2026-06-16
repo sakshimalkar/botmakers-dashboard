@@ -8,6 +8,11 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
+## 🔗 Live Demo
+
+**View the live application:** [BotMakers Dashboard - The Arena](https://your-live-demo-url.com)
+
+---
 
 ## 📋 Table of Contents
 - [About The Project](#-about-the-project)
@@ -15,11 +20,6 @@
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
-- [Running the Application](#-running-the-application)
-- [API Endpoints](#-api-endpoints)
-- [Screenshots](#-screenshots)
-- [Author](#-author)
-- [License](#-license)
 
 ---
 
