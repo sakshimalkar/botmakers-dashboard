@@ -1,0 +1,297 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #1A1919;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== HEADER ========== */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    background: #1A1919;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #FFD700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+    background: #FFD700;
+    color: #1A1919;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.btn-outline:hover {
+    border-color: #FFD700;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    padding: 80px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-content h1 span {
+    color: #FFD700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 20px 0 30px;
+}
+
+/* ========== ARENA SECTION ========== */
+.arena {
+    padding: 80px 0;
+}
+
+.arena h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.arena-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.arena-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.arena-card:hover {
+    transform: translateY(-8px);
+    border-color: #FFD700;
+}
+
+.arena-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.arena-card p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0;
+}
+
+/* ========== EPISODES SECTION ========== */
+.episodes {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.episodes h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+}
+
+.episode-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.episode-card p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========== RANKING SECTION ========== */
+.ranking {
+    padding: 80px 0;
+}
+
+.ranking h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.ranking-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ranking-table th {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.ranking-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ranking-table tr:hover td {
+    background: rgba(255, 215, 0, 0.05);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    padding: 60px 0 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+footer .footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #FFFFFF;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .auth-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .arena-cards,
+    .episode-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
